@@ -103,9 +103,9 @@ def replicate_url(full_url,
 
     # hack
     print("[+] Fetching %s" % full_url)
-    if installer and "BaseSystem.dmg" not in full_url and "Big Sur" not in product_title and "Monterey" not in product_title and "Ventura" not in product_title:
+    if installer and "BaseSystem.dmg" not in full_url and "Big Sur" not in product_title and "Monterey" not in product_title and "Ventura" not in product_title and "Sonoma" not in product_title:
         return
-    if ("Big Sur" in product_title or "Monterey" in product_title or "Ventura" in product_title) and "InstallAssistant.pkg" not in full_url:
+    if ("Big Sur" in product_title or "Monterey" in product_title or "Ventura" in product_title or "Sonoma" in product_title) and "InstallAssistant.pkg" not in full_url:
         return
     attempt_resume = True
     # path = urllib.parse.urlsplit(full_url)[2]
